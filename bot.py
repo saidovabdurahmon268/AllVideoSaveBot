@@ -14,7 +14,7 @@ from telegram.ext import (
 )
 
 import os
-TOKEN = os>getenv("BOT_TOKEN")
+TOKEN = os.getenv("BOT_TOKEN")
 from downloader import download_video
 from telegram.error import BadRequest
 
