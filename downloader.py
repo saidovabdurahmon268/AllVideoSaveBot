@@ -19,6 +19,7 @@ def download_video(url):
         "outtmpl": filename,
         "format": "best",
         "noplaylist": True
+        "proxy": "http://185.195.122.2:8080
     }
 
     with yt_dlp.YoutubeDL(options) as ydl:
