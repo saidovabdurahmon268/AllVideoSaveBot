@@ -13,7 +13,8 @@ from telegram.ext import (
     CallbackQueryHandler
 )
 
-from config import TOKEN
+import os
+TOKEN = os>getenv("BOT_TOKEN")
 from downloader import download_video
 from telegram.error import BadRequest
 
