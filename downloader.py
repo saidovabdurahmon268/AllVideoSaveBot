@@ -14,11 +14,10 @@ def download_video(url):
         folder,
         str(uuid.uuid4()) + ".%(ext)s"
     )
-
-    options = {
+options = {
         "outtmpl": filename,
         "format": "best",
-        "noplaylist": True
+        "noplaylist": True,
         "proxy": "http://185.195.122.2:8080"
     }
 
