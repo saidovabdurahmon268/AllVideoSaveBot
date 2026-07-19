@@ -2,9 +2,7 @@ import yt_dlp
 import os
 import uuid
 
-
 def download_video(url):
-
     folder = "downloads"
 
     if not os.path.exists(folder):
@@ -14,7 +12,8 @@ def download_video(url):
         folder,
         str(uuid.uuid4()) + ".%(ext)s"
     )
-options = {
+
+    options = {
         "outtmpl": filename,
         "format": "best",
         "noplaylist": True,
